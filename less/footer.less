@@ -1,8 +1,15 @@
 .footer-container{
+    
     @media @tablet{
         display: flex;
         text-align: center;
         justify-content: space-evenly;
+    }
+
+    @media @mobile {
+        background-color: black;
+        padding: 5%;
+        padding-top: 10%;   
     }
     .button{
         .button(white, black, 1.2rem, arial);
@@ -10,16 +17,24 @@
         border-radius: 6px;
         margin: 0 0 1.5% 1.5%;
         border: @main-color solid 1px;
+        width: 200px;
 
         @media @tablet {
             width: 200px;
             margin: 0;
+        }
+        @media @mobile {
+            width: 200px;
+            margin: 1%;
+            padding: 2%;
+            border-radius: 5px;
         }
         
 
         &:hover{
             background-color: @orange;
             color: black;
+            cursor: pointer;
         }
     }
     .buttonborder{

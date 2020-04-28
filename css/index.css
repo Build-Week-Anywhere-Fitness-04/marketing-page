@@ -140,7 +140,12 @@ nav {
   padding-right: 40%;
   font-weight: 800;
 }
-@media (max-width: 300px) {
+@media (max-width: 750px) {
+  .links a {
+    display: none;
+  }
+}
+@media (max-width: 386px) {
   .links a {
     display: none;
   }
@@ -152,6 +157,13 @@ nav {
     justify-content: space-evenly;
   }
 }
+@media (max-width: 386px) {
+  .footer-container {
+    background-color: black;
+    padding: 5%;
+    padding-top: 10%;
+  }
+}
 .footer-container .button {
   background-color: white;
   color: black;
@@ -161,6 +173,7 @@ nav {
   border-radius: 6px;
   margin: 0 0 1.5% 1.5%;
   border: #1B1A1A solid 1px;
+  width: 200px;
 }
 @media (max-width: 1000px) {
   .footer-container .button {
@@ -168,9 +181,18 @@ nav {
     margin: 0;
   }
 }
+@media (max-width: 386px) {
+  .footer-container .button {
+    width: 200px;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 5px;
+  }
+}
 .footer-container .button:hover {
   background-color: #FF9233;
   color: black;
+  cursor: pointer;
 }
 .footer-container .buttonborder {
   margin: 3% 0 0.5% 0;
@@ -181,13 +203,18 @@ nav {
 body {
   color: 'Raleway', sans-serif;
 }
-@media (max-width: 300px) {
+@media (max-width: 386px) {
   body {
-    background-color: #090808;
-    opacity: 0.85;
-    background-image: url("/Users/kylebecca3/Desktop/Kyles-projects/Lambda_School_Projects/marketing-page/images/Background-Image.png");
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 386px) {
+  body .mobileoverlay {
+    background: linear-gradient(rgba(9, 8, 8, 0.85), rgba(9, 8, 8, 0.85)), url("/Users/kylebecca3/Desktop/Kyles-projects/Lambda_School_Projects/Unit_I/marketing-page/images/Background-moible.png");
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
   }
 }
 body .title-container {
@@ -195,8 +222,23 @@ body .title-container {
   justify-content: space-between;
   padding: 1% 1% 3% 1%;
 }
-body h1 {
-  font-size: 6rem;
+@media (max-width: 750px) {
+  body .title-container {
+    justify-content: center;
+  }
+}
+body .title-container h1 {
+  font-size: 4rem;
+}
+@media (max-width: 386px) {
+  body .title-container h1 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 100;
+    margin-top: 10%;
+    font-family: 'Raleway', sans-serif;
+  }
 }
 body .banner {
   background-color: #FF9233;
@@ -207,10 +249,18 @@ body .banner {
   font-family: 'Raleway', sans-serif;
   font-weight: bolder;
 }
+@media (max-width: 386px) {
+  body .banner {
+    background-color: transparent;
+    font-size: 0.75rem;
+    margin: 5%;
+    margin-bottom: 111%;
+  }
+}
 body .browse {
   display: flex;
   flex-direction: column;
-  background-image: url("/Users/kylebecca3/Desktop/Kyles-projects/Lambda_School_Projects/marketing-page/images/Background-Image.png");
+  background: url("/Users/kylebecca3/Desktop/Kyles-projects/Lambda_School_Projects/Unit_I/marketing-page/images/Background-Image.png");
   background-size: cover;
   background-position: center center;
   height: 800px;
@@ -220,6 +270,11 @@ body .browse {
 @media (max-width: 1000px) {
   body .browse {
     height: 600px;
+  }
+}
+@media (max-width: 386px) {
+  body .browse {
+    display: none;
   }
 }
 body .browse h2 {
@@ -233,6 +288,11 @@ body .browse h2 {
   body .browse h2 {
     font-size: 6rem;
     text-align: center;
+  }
+}
+@media (max-width: 750px) {
+  body .browse h2 {
+    font-size: 5rem;
   }
 }
 body .browse p {
@@ -251,8 +311,9 @@ body .browse p {
     margin-top: 12%;
   }
 }
-@media (max-width: 300px) {
-  body .browse {
-    display: none;
+@media (max-width: 750px) {
+  body .browse p {
+    font-size: 1.5rem;
+    margin-bottom: 30%;
   }
 }
