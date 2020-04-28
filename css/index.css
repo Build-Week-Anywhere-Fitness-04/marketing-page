@@ -157,6 +157,13 @@ nav {
     justify-content: space-evenly;
   }
 }
+@media (max-width: 386px) {
+  .footer-container {
+    background-color: black;
+    padding: 5%;
+    padding-top: 10%;
+  }
+}
 .footer-container .button {
   background-color: white;
   color: black;
@@ -172,6 +179,14 @@ nav {
   .footer-container .button {
     width: 200px;
     margin: 0;
+  }
+}
+@media (max-width: 386px) {
+  .footer-container .button {
+    width: 200px;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 5px;
   }
 }
 .footer-container .button:hover {
@@ -190,11 +205,16 @@ body {
 }
 @media (max-width: 386px) {
   body {
-    background-color: #090808;
-    opacity: 0.85;
-    background-image: url("/Users/kylebecca3/Desktop/Kyles-projects/Lambda_School_Projects/Unit_I/marketing-page/images/Background-Image.png");
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 386px) {
+  body .mobileoverlay {
+    background: linear-gradient(rgba(9, 8, 8, 0.85), rgba(9, 8, 8, 0.85)), url("/Users/kylebecca3/Desktop/Kyles-projects/Lambda_School_Projects/Unit_I/marketing-page/images/Background-moible.png");
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
   }
 }
 body .title-container {
@@ -210,6 +230,16 @@ body .title-container {
 body .title-container h1 {
   font-size: 4rem;
 }
+@media (max-width: 386px) {
+  body .title-container h1 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: 100;
+    margin-top: 10%;
+    font-family: 'Raleway', sans-serif;
+  }
+}
 body .banner {
   background-color: #FF9233;
   text-align: center;
@@ -219,10 +249,18 @@ body .banner {
   font-family: 'Raleway', sans-serif;
   font-weight: bolder;
 }
+@media (max-width: 386px) {
+  body .banner {
+    background-color: transparent;
+    font-size: 0.75rem;
+    margin: 5%;
+    margin-bottom: 111%;
+  }
+}
 body .browse {
   display: flex;
   flex-direction: column;
-  background-image: url("/Users/kylebecca3/Desktop/Kyles-projects/Lambda_School_Projects/Unit_I/marketing-page/images/Background-Image.png");
+  background: url("/Users/kylebecca3/Desktop/Kyles-projects/Lambda_School_Projects/Unit_I/marketing-page/images/Background-Image.png");
   background-size: cover;
   background-position: center center;
   height: 800px;
@@ -232,6 +270,11 @@ body .browse {
 @media (max-width: 1000px) {
   body .browse {
     height: 600px;
+  }
+}
+@media (max-width: 386px) {
+  body .browse {
+    display: none;
   }
 }
 body .browse h2 {
@@ -272,10 +315,5 @@ body .browse p {
   body .browse p {
     font-size: 1.5rem;
     margin-bottom: 30%;
-  }
-}
-@media (max-width: 386px) {
-  body .browse {
-    display: none;
   }
 }

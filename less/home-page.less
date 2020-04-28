@@ -1,14 +1,25 @@
 body {
     color: @main-font;
 
-    @media @mobile {
-        background-color: #090808;
-        opacity: 0.85;
-        background-image: url("/Users/kylebecca3/Desktop/Kyles-projects/Lambda_School_Projects/Unit_I/marketing-page/images/Background-Image.png");
-        background-size: cover;
-        background-position: center center;
+        @media @mobile{
+            display: flex;
+            flex-direction: column;
+        }
+    .mobileoverlay{
+        @media @mobile {
+            background: 
+            linear-gradient(
+                rgba(9,8,8,.85),
+                rgba(9,8,8,.85)
+            ),
+            
+            url("/Users/kylebecca3/Desktop/Kyles-projects/Lambda_School_Projects/Unit_I/marketing-page/images/Background-moible.png");
+            // background-color: black;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+         }
     }
-    
     .title-container{
         display: flex;
         justify-content: space-between;
@@ -17,9 +28,19 @@ body {
         @media @tablet2 {
             justify-content: center;
         }
-        
+
         h1{
             font-size: 4rem;
+
+            @media @mobile {
+                text-align: center;
+                color: white;
+                font-size: 3rem;
+                font-weight: 100;
+                margin-top: 10%;
+                font-family: @main-font;
+
+            }
         }
     }
     .banner{
@@ -30,12 +51,19 @@ body {
         padding: 1.2%;
         font-family: @main-font;
         font-weight: bolder;
+
+        @media @mobile{
+            background-color: transparent;
+            font-size: .75rem;
+            margin: 5%;
+            margin-bottom: 111%;
+        }
     }
 
     .browse{
         display: flex;
         flex-direction: column;
-        background-image: url("/Users/kylebecca3/Desktop/Kyles-projects/Lambda_School_Projects/Unit_I/marketing-page/images/Background-Image.png");
+        background: url("/Users/kylebecca3/Desktop/Kyles-projects/Lambda_School_Projects/Unit_I/marketing-page/images/Background-Image.png");
         background-size: cover;
         background-position: center center;
         height: 800px;
@@ -44,6 +72,9 @@ body {
 
         @media @tablet{
             height: 600px;
+        }
+        @media @mobile{
+            display: none;
         }
     
         h2{
@@ -61,6 +92,7 @@ body {
             @media @tablet2 {
                 font-size: 5rem;
             }
+
         }
         p{
             font-size: 2rem;
@@ -80,10 +112,6 @@ body {
                 font-size: 1.5rem;
                 margin-bottom: 30%;
             }
-        }
-       
-        @media @mobile {
-            display: none;
         }
     }
 
