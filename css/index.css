@@ -211,7 +211,7 @@ body {
 }
 @media (max-width: 386px) {
   body .mobileoverlay {
-    background: linear-gradient(rgba(9, 8, 8, 0.85), rgba(9, 8, 8, 0.85)), url("/Users/kylebecca3/Desktop/Kyles-projects/Lambda_School_Projects/Unit_I/marketing-page/images/Background-moible.png");
+    background: linear-gradient(rgba(9, 8, 8, 0.85), rgba(9, 8, 8, 0.85)), url("../images/Background-mobile.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
