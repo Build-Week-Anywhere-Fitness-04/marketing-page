@@ -42,20 +42,36 @@ body{
         .members{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-evenly;
-
+            justify-content: space-between;
 
             img{
                 border-radius: 50%;
+                padding: 3%;
+                border-width: 3px;
+                border-style: solid;
+                // border-image: linear-gradient(to right, red, orange);
+
+
+                
             }
 
             .profile{
                 display: flex;
                 flex-direction: column;
                 margin: 2% 0;
-                align-items: center;
-                width: 33%;
+                align-items: flex-start;
+                padding-left: 1%;
+                width: 32%;
                 
+                // .team-img{
+                //     border: solid black 10px;
+                //     border-radius: 50%;
+                //     border-top-color: transparent;
+                //     border-right-color: transparent;
+                //     transform: rotate(-45deg);
+                    
+                    
+                // }
 
                 h4{
                     font-size: 2rem;
@@ -73,15 +89,12 @@ body{
                 }
                 #path{
                     font-size: 1.75rem;
-                    background: linear-gradient(to right ,#DC143C, #00FFFF);
+                    background: linear-gradient(to right ,@orange, #DC143C);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     border: none;
                     padding-top: 3%;
-                    width: 30%;
-                    margin-right: 60%;
-                    
-                    
+                    width: 35%;                    
                 }
             }
         }
