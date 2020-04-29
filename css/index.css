@@ -211,7 +211,7 @@ body {
 }
 @media (max-width: 386px) {
   body .mobileoverlay {
-    background: linear-gradient(rgba(9, 8, 8, 0.85), rgba(9, 8, 8, 0.85)), url("../images/Background-mobile.png");
+    background: linear-gradient(rgba(9, 8, 8, 0.8), rgba(9, 8, 8, 0.8)), url("../images/Background-mobile.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -316,4 +316,56 @@ body .browse p {
     font-size: 1.5rem;
     margin-bottom: 30%;
   }
+}
+body {
+  background: url('../images/Background-Image.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .description {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 0 6% 1%;
+}
+body .description h2 {
+  font-size: 4rem;
+  font-family: 'Raleway', sans-serif;
+}
+body .description p {
+  font-size: 1.75rem;
+  font-family: 'Raleway', sans-serif;
+  width: 60%;
+  line-height: 1.25;
+}
+body .team {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 0 6% 1%;
+  font-weight: 800;
+}
+body .team h2 {
+  font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
+}
+body .team .members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+body .team .members img {
+  border-radius: 50%;
+}
+body .team .members .profile {
+  display: flex;
+  flex-direction: column;
+  margin: 2% 0;
+  align-items: center;
+  width: 33%;
+}
+body .team .members .profile h4 {
+  font-size: 2rem;
+}
+body .team .members .profile p {
+  font-size: 1.5rem;
 }

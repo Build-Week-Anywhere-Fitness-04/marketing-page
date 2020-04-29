@@ -1,0 +1,70 @@
+body{
+    background: url('../images/Background-Image.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .title-container{
+
+    }
+
+    .description{
+        display: flex;
+        flex-direction: column;
+ 
+        margin: 2% 0 6% 1%;
+
+        h2{
+            font-size: 4rem;
+            font-family: @main-font;
+        }
+
+        p{
+            font-size: 1.75rem;
+            font-family: @main-font;
+            width: 60%;
+            line-height: 1.25;
+        }
+    }
+
+    .team {
+  
+        display: flex;
+        flex-direction: column;
+        margin: 2% 0 6% 1%;
+        font-weight: 800;
+
+        h2{
+            font-size: 3rem;
+            font-family: @main-font;
+        }
+
+        .members{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+
+            img{
+                border-radius: 50%;
+            }
+
+            .profile{
+                display: flex;
+                flex-direction: column;
+                margin: 2% 0;
+                align-items: center;
+                width: 33%;
+                
+
+                h4{
+                    font-size: 2rem;
+                }
+
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
