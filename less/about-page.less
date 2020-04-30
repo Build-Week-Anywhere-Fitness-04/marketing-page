@@ -70,6 +70,12 @@
         img{
             border-radius: 50%;
 
+            @media @mobile{
+                height: 150px;
+                width: 150px;
+            }
+
+
             
         }
 
@@ -93,6 +99,7 @@
 
             @media @mobile {
                 width: 100%;
+
             }
 
 
@@ -101,6 +108,10 @@
                 width: 90%;
                 padding-top: 2%;
                 color: @orange;
+
+                @media @mobile{
+                    font-size: 1.5rem;
+                }
             }
 
             p{
@@ -109,6 +120,10 @@
                 padding-bottom: 5%;
                 padding-top: 4%;
                 width: 90%;
+
+                @media @mobile{
+                    font-size: 1rem;
+                }
             }
             #path{
                 font-size: 1.75rem;
@@ -117,10 +132,11 @@
                 -webkit-text-fill-color: transparent;
                 border: none;
                 padding-top: 3%;
-                width: 35%;   
+                width: 100%;   
                 
                 @media @mobile {
                     width: 100%;
+                    font-size: 1.25rem;
                 }
             }
         }
