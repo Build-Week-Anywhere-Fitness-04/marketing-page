@@ -15,6 +15,12 @@
     h2{
         font-size: 4rem;
         font-family: @main-font;
+
+
+        @media @tablet2 {
+            font-size: 3rem;
+            text-align: center;
+        }
     }
 
     p{
@@ -22,6 +28,13 @@
         font-family: @main-font;
         width: 60%;
         line-height: 1.25;
+
+        @media @tablet2 {
+            font-size: 1.5rem;
+            text-align: justify;
+            width: 80%;
+            margin: 0 10%;
+        }
     }
 }
 
@@ -35,17 +48,28 @@
     h2{
         font-size: 3rem;
         font-family: @main-font;
+
     }
 
     .members{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+ 
+
+        @media @tablet2 {
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+        }
+
+        .team-img{
+            width: 35%;
+        }
 
         img{
             border-radius: 50%;
-            // padding: 3%;
-            background-image: -webkit-linear-gradient(red, green, blue);
+
             
         }
 
@@ -56,16 +80,21 @@
             align-items: flex-start;
             padding-left: 1%;
             width: 32%;
-            
-            // .team-img{
-            //     border: solid black 10px;
-            //     border-radius: 50%;
-            //     border-top-color: transparent;
-            //     border-right-color: transparent;
-            //     transform: rotate(-45deg);
-                
-                
-            // }
+   
+
+            @media @tablet {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+
+            }
+
+            @media @mobile {
+                width: 100%;
+            }
+
 
             h4{
                 font-size: 2rem;
@@ -88,7 +117,11 @@
                 -webkit-text-fill-color: transparent;
                 border: none;
                 padding-top: 3%;
-                width: 35%;                    
+                width: 35%;   
+                
+                @media @mobile {
+                    width: 100%;
+                }
             }
         }
     }
