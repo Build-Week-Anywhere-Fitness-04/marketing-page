@@ -1,98 +1,94 @@
-body{
-    // background: url('../images/Background-Image.png');
-    // background-position: center center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
+.about-container{
+    background: url('../images/Background-Image.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+}
 
-    .description{
-        display: flex;
-        flex-direction: column;
- 
-        margin: 2% 0 6% 1%;
+.description{
+    display: flex;
+    flex-direction: column;
 
-        h2{
-            font-size: 4rem;
-            font-family: @main-font;
-        }
+    margin: 2% 0 6% 1%;
 
-        p{
-            font-size: 1.75rem;
-            font-family: @main-font;
-            width: 60%;
-            line-height: 1.25;
-        }
+    h2{
+        font-size: 4rem;
+        font-family: @main-font;
     }
 
-    .team {
-  
-        display: flex;
-        flex-direction: column;
-        margin: 2% 0 6% 1%;
-        font-weight: 800;
+    p{
+        font-size: 1.75rem;
+        font-family: @main-font;
+        width: 60%;
+        line-height: 1.25;
+    }
+}
 
-        h2{
-            font-size: 3rem;
-            font-family: @main-font;
+.team {
+
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0 6% 1%;
+    font-weight: 800;
+
+    h2{
+        font-size: 3rem;
+        font-family: @main-font;
+    }
+
+    .members{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        img{
+            border-radius: 50%;
+            // padding: 3%;
+            background-image: -webkit-linear-gradient(red, green, blue);
+            
         }
 
-        .members{
+        .profile{
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-
-            img{
-                border-radius: 50%;
-                padding: 3%;
-                border-width: 3px;
-                border-style: solid;
-                // border-image: linear-gradient(to right, red, orange);
-
-
+            flex-direction: column;
+            margin: 2% 0;
+            align-items: flex-start;
+            padding-left: 1%;
+            width: 32%;
+            
+            // .team-img{
+            //     border: solid black 10px;
+            //     border-radius: 50%;
+            //     border-top-color: transparent;
+            //     border-right-color: transparent;
+            //     transform: rotate(-45deg);
                 
+                
+            // }
+
+            h4{
+                font-size: 2rem;
+                width: 90%;
+                padding-top: 2%;
+                color: @orange;
             }
 
-            .profile{
-                display: flex;
-                flex-direction: column;
-                margin: 2% 0;
-                align-items: flex-start;
-                padding-left: 1%;
-                width: 32%;
-                
-                // .team-img{
-                //     border: solid black 10px;
-                //     border-radius: 50%;
-                //     border-top-color: transparent;
-                //     border-right-color: transparent;
-                //     transform: rotate(-45deg);
-                    
-                    
-                // }
-
-                h4{
-                    font-size: 2rem;
-                    width: 90%;
-                    padding-top: 2%;
-                    color: @orange;
-                }
-
-                p{
-                    font-size: 1.5rem;
-                    border-bottom: solid grey 1px;
-                    padding-bottom: 5%;
-                    padding-top: 4%;
-                    width: 90%;
-                }
-                #path{
-                    font-size: 1.75rem;
-                    background: linear-gradient(to right ,@orange, #DC143C);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    border: none;
-                    padding-top: 3%;
-                    width: 35%;                    
-                }
+            p{
+                font-size: 1.5rem;
+                border-bottom: solid grey 1px;
+                padding-bottom: 5%;
+                padding-top: 4%;
+                width: 90%;
+            }
+            #path{
+                font-size: 1.75rem;
+                background: linear-gradient(to right ,@orange, #DC143C);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                border: none;
+                padding-top: 3%;
+                width: 35%;                    
             }
         }
     }
